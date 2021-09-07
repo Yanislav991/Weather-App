@@ -1,0 +1,21 @@
+*{
+    font-family: 'Lobster', cursive;
+}
+
+body{
+    background-color: #505160;
+    color:#FFF
+}
+
+.container{
+    width: 300px;    
+    background-color: #68829E;
+    
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+    text-align: center;
+}
+
