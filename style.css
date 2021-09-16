@@ -1,7 +1,9 @@
 *{
     font-family: 'Lobster', cursive;
 }
-
+strong{
+    font-weight: 400;
+}
 body{
     background-color: #505160;
     color:#FFF
@@ -18,4 +20,19 @@ body{
     padding-bottom : 50px;
     text-align: center;
 }
+.form-group { position: relative; }
+.form-group span.loader { display: inline-block; opacity: 0; visibility: hidden; width: 20px; height: 20px; position: absolute; top: 8px; right: 10px; background-image: url(css/images/loader.gif); background-size: contain; transition: opacity .2s, visibility .2s; }
+.form-group span.loader--active  { visibility: visible; opacity: 1; }
+/* .list-group{position: absolute; top:100%; left: 0; width: 100%; } */
+
+.list-group > ul { max-height:200px; overflow: auto; list-style: none; box-shadow: 0px 0px 5px #cecece; border-radius: 5px; padding: 0; }		
+
+.list-group .error { pointer-events: none; }		
+
+.list-group .error,
+.list-group .option { padding: 10px 20px; transition: background .3s, color .3s; position: relative; }		
+.list-group .option:hover { background-color: #fafafa; color: blue; cursor: pointer; }		
+
+.list-group .option:before { content: ''; display: block; width: 0; height: 1px; background-color: #cecece; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); transition: width .3s; }		
+.list-group .option:hover:before { width: 100%; }		
 
